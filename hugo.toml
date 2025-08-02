@@ -1,7 +1,39 @@
-baseURL = 'https://example.org/'
+baseURL = ''
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'L. Boukela'
 theme = 'PaperMod'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+  [params.homeInfoParams]
+    Title = "Hello there, I'm L. Boukela"
+    Content = "I am a software engineer and a computer science student at the University of California, Santa Cruz. I am passionate about open source software and web development. I love to learn new technologies and share my knowledge with others."
+    Image = "https://avatars.githubusercontent.com/u/12345678?v=4"
+    ImageAlt = "L. Boukela's avatar"
+    ImageWidth = 200
+    ImageHeight = 200
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/yourprofile"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:you@example.com"
+
+    showHomeInfo = true
+    showSocialIcons = true
+    showSearchBox = true
+    showReadingTime = true
+    showLastmod = true
+    showWordCount = true
+    showToc = true
+    showPostNavLinks = true  
+  

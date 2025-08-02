@@ -1,22 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>https://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on L. Boukela</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on L. Boukela</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jul 2025 13:39:52 +0200</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jul 2025 18:03:00 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://example.org/posts/my-first-post/</link>
-      <pubDate>Sat, 19 Jul 2025 13:39:52 +0200</pubDate>
-      <guid>https://example.org/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;
-&lt;p&gt;This is a simple draft&lt;/p&gt;</description>
+      <title>New Topic</title>
+      <link>//localhost:1313/posts/ml/new-topic/</link>
+      <pubDate>Sun, 20 Jul 2025 18:03:00 +0200</pubDate>
+      <guid>//localhost:1313/posts/ml/new-topic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>📚 Publications</title>
+      <link>//localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exploring NAS for anomaly detection in superconducting cavities of particle accelerators&lt;/strong&gt;.&lt;br&gt;
+&lt;em&gt;L. Boukela, J. Branlard, A. Eichler&lt;/em&gt; – &lt;em&gt;Frontiers in Physics&lt;/em&gt;, 13:1553993 (May 2025).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A Two-Stage Machine-Learning-Aided Approach for Quench Identification at the European XFEL&lt;/strong&gt;.&lt;br&gt;
+&lt;em&gt;L. Boukela, A. Eichler, J. Branlard, N. Z. Jomhari&lt;/em&gt; – &lt;em&gt;arXiv/CoRR&lt;/em&gt; abs/2407-08408 (2024).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A Near-Autonomous and Incremental Intrusion-Detection System through Active Learning of Known and Unknown Attacks&lt;/strong&gt;.&lt;br&gt;
+&lt;em&gt;L. Boukela, G. Zhang, M. Yacoub, S. Bouzefrane&lt;/em&gt; – &lt;em&gt;arXiv/CoRR&lt;/em&gt; abs/2310-17430 (2023).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>//localhost:1313/posts/my-second-post/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/my-second-post/</guid>
+      <description>&lt;h1 id=&#34;-welcome-to-my-hugo-powered-website&#34;&gt;🚀 Welcome to My Hugo-Powered Website&lt;/h1&gt;
+&lt;p&gt;This is the &lt;strong&gt;front page&lt;/strong&gt; of my site, built with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and the &lt;strong&gt;PaperMod&lt;/strong&gt; theme.&lt;/p&gt;
+&lt;h2 id=&#34;-about-this-site&#34;&gt;📌 About This Site&lt;/h2&gt;
+&lt;p&gt;Welcome! Here, you’ll find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 &lt;strong&gt;Articles&lt;/strong&gt; on tech, coding, and more&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;Projects &amp;amp; Portfolios&lt;/strong&gt; showcasing my work&lt;/li&gt;
+&lt;li&gt;🔗 &lt;strong&gt;Resources &amp;amp; Links&lt;/strong&gt; for learning and inspiration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-featured-content&#34;&gt;🔥 Featured Content&lt;/h2&gt;
+&lt;p&gt;💡 Check out some of my latest posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;posts/getting-started-hugo&#34;&gt;Getting Started with Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;posts/static-site-benefits&#34;&gt;Why I Love Static Site Generators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;posts/markdown-tips&#34;&gt;Markdown Tricks You Should Know&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-connect-with-me&#34;&gt;🌍 Connect With Me&lt;/h2&gt;
+&lt;p&gt;📫 Email: &lt;a href=&#34;mailto:your@email.com&#34;&gt;your@email.com&lt;/a&gt;
+🐦 Twitter: &lt;a href=&#34;https://twitter.com/yourhandle&#34;&gt;@yourhandle&lt;/a&gt;
+📂 GitHub: &lt;a href=&#34;https://github.com/yourgithub&#34;&gt;yourgithub&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
