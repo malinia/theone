@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GPS/GS on L. Boukela</title>
+    <link>//localhost:1313/tags/gps/gs/</link>
+    <description>Recent content in GPS/GS on L. Boukela</description>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/gps/gs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPS/GSM Vehicle Anti-Theft &amp; Geolocation System</title>
+      <link>//localhost:1313/posts/projects/quench-ml-visualization/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/quench-ml-visualization/</guid>
+      <description>Designed and developed an embedded vehicle tracking and anti-theft system that combines GPS positioning with GSM communication to remotely locate a vehicle via SMS.</description>
+    </item>
+  </channel>
+</rss>

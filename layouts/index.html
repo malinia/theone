@@ -1,0 +1,96 @@
+{{- define "main" }}
+
+{{- partial "home_info.html" . }}
+
+{{- $about := site.GetPage "/posts/about-me" }}
+{{- $publications := site.GetPage "/posts/publications" }}
+{{- $projects := site.GetPage "/posts/projects" }}
+{{- $notes := site.GetPage "/posts/notes" }}
+
+{{- if $about }}
+<section class="home-section">
+  <!-- <h2>About Me</h2> -->
+  <article class="post-entry">
+    <h3>{{ $about.Title }}</h3>
+    <div class="entry-content">
+      <p>{{ $about.Summary | plainify | htmlUnescape }}</p>
+    </div>
+    <a class="entry-link" href="{{ $about.RelPermalink }}"></a>
+  </article>
+</section>
+{{- end }}
+
+{{- if $publications }}
+<section class="home-section">
+  <!-- <h2>Publications</h2> -->
+  <article class="post-entry">
+    <h3>{{ $publications.Title }}</h3>
+    <div class="entry-content">
+      <p>{{ $publications.Summary | plainify | htmlUnescape }}</p>
+    </div>
+    <a class="entry-link" href="{{ $publications.RelPermalink }}"></a>
+  </article>
+</section>
+{{- end }}
+
+{{- if $projects }}
+<section class="home-section">
+  <h2>Projects</h2>
+
+  <div class="home-carousel-wrapper">
+
+    <button class="carousel-arrow carousel-left"
+            data-target="projects-carousel"
+            aria-label="Previous projects">
+      ‹
+    </button>
+
+    <div class="home-carousel" id="projects-carousel">
+      {{- range $projects.Pages.ByDate.Reverse }}
+        {{- if not .Draft }}
+          {{- partial "project-card.html" . }}
+        {{- end }}
+      {{- end }}
+    </div>
+
+    <button class="carousel-arrow carousel-right"
+            data-target="projects-carousel"
+            aria-label="Next projects">
+      ›
+    </button>
+
+  </div>
+</section>
+{{- end }}
+
+{{- if $notes }}
+<section class="home-section">
+  <h2>Notes</h2>[under construction]
+
+  <div class="home-carousel-wrapper">
+
+    <button class="carousel-arrow carousel-left"
+            data-target="notes-carousel"
+            aria-label="Previous notes">
+      ‹
+    </button>
+
+    <div class="home-carousel" id="notes-carousel">
+      {{- range $notes.Pages.ByDate.Reverse }}
+        {{- if not .Draft }}
+          {{- partial "note-card.html" . }}
+        {{- end }}
+      {{- end }}
+    </div>
+
+    <button class="carousel-arrow carousel-right"
+            data-target="notes-carousel"
+            aria-label="Next notes">
+      ›
+    </button>
+
+  </div>
+</section>
+{{- end }}
+<script src="{{ "js/carousel.js" | relURL }}"></script>
+{{- end }}

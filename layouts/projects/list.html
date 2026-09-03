@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+        <div class="post-description">
+            {{ . }}
+        </div>
+    {{ end }}
+</header>
+
+<div class="projects-list">
+
+{{ range .Pages }}
+
+<a href="{{ .RelPermalink }}" class="project-card">
+
+    <div class="project-content">
+
+        <div class="project-header">
+
+            <div class="project-title">
+                <strong>{{ .Title }}</strong>
+            </div>
+
+            {{ with .Date }}
+            <div class="project-date">
+                {{ .Format "2006" }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        {{ with .Params.description }}
+        <div class="project-description">
+            {{ . }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.tags }}
+        <div class="project-tags">
+            {{ range . }}
+            <span>{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+
+    </div>
+
+    {{ with .Params.image }}
+    <div class="project-image">
+        <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+
+</a>
+
+{{ end }}
+
+</div>
+
+{{ end }}

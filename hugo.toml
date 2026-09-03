@@ -3,30 +3,47 @@ languageCode = 'en-us'
 title = 'L. Boukela'
 theme = 'PaperMod'
 
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url = "/posts/projects/"
+    weight = 10
+
+
+  [[menu.main]]
+    name = "Notes"
+    url = "/posts/notes/"
+    weight = 5  
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
 
 [params]
   [params.homeInfoParams]
-    Title = "Hello there, I'm L. Boukela"
-    Content = "I am a software engineer and a computer science student at the University of California, Santa Cruz. I am passionate about open source software and web development. I love to learn new technologies and share my knowledge with others."
+    Title = "Hello , I'm L. Boukela"
+    Content = "I am a computer scientist developing AI-based solutions to enhance system reliability and security. My work spans cybersecurity and particle accelerators, addressing the evolving nature of computer network data in intrusion detection systems and the resource constraints involved in deploying ML models at the European XFEL. I combine the academic rigor of a scientist with the execution focus of an engineer, my work has led to impactful solutions and publications, cross-disciplinary collaborations, and research experience at international laboratories."
+
     Image = "https://avatars.githubusercontent.com/u/12345678?v=4"
     ImageAlt = "L. Boukela's avatar"
     ImageWidth = 200
     ImageHeight = 200
-
+  
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/yourusername"
+    url = "https://github.com/malinia"
 
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/yourprofile"
+    url = "https://linkedin.com/in/lynda-b-001519104/"
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:you@example.com"
+    url = "mailto:boukelalynda@outlook.fr"
 
     showHomeInfo = true
     showSocialIcons = true
@@ -36,4 +53,3 @@ theme = 'PaperMod'
     showWordCount = true
     showToc = true
     showPostNavLinks = true  
-  

@@ -1,0 +1,29 @@
+<article class="project-card">
+
+  {{- with .Params.cover.image }}
+  <div class="project-card-image">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+  </div>
+  {{- end }}
+
+  <div class="project-card-content">
+
+    <h3>{{ .Title }}</h3>
+
+    {{- with .Description }}
+    <p>{{ . }}</p>
+    {{- end }}
+
+    {{- with .Params.tags }}
+    <div class="project-tags">
+      {{- range . }}
+      <span>{{ . }}</span>
+      {{- end }}
+    </div>
+    {{- end }}
+
+  </div>
+
+  <a class="entry-link" aria-label="Read {{ .Title }}" href="{{ .RelPermalink }}"></a>
+
+</article>

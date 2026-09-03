@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Adaptive Intrusion Detection with Active Learning | L. Boukela</title>
+<meta name="keywords" content="Machine Learning, Quench Detection, SRF Cavities, Particle Accelerators">
+<meta name="description" content="An adaptive intrusion detection system that combines deep learning, active learning, and incremental learning to detect known and emerging cyberattacks while reducing the need for manual data labeling.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/projects/adaptive-ids/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.87b66f08b42d6cb9cf21be2adaab87c8bd7259cb4843026baf6ee27db5d6c60f.css" integrity="sha256-h7ZvCLQtbLnPIb4q2quHyL1yWctIQwJrr27ifbXWxg8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/projects/adaptive-ids/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="L. Boukela (Alt + H)">L. Boukela</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/posts/publications/" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/notes/" title="Notes">
+                    <span>Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Adaptive Intrusion Detection with Active Learning
+    </h1>
+    <div class="post-description">
+      An adaptive intrusion detection system that combines deep learning, active learning, and incremental learning to detect known and emerging cyberattacks while reducing the need for manual data labeling.
+    </div>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="//localhost:1313/images/projects/IDS2.png" alt="">
+        
+</figure>
+  <div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<h3 id="a-near-autonomous-and-incremental-intrusion-detection-system-through-active-learning-of-known-and-unknown-attacks">A near-autonomous and incremental intrusion detection system through active learning of known and unknown attacks<a hidden class="anchor" aria-hidden="true" href="#a-near-autonomous-and-incremental-intrusion-detection-system-through-active-learning-of-known-and-unknown-attacks">#</a></h3>
+<p>This project develops an adaptive <strong>Intrusion Detection System (IDS)</strong> capable of detecting both known and previously unseen cyberattacks.</p>
+<p>The system combines <strong>deep learning, K-Nearest Neighbors (KNN), active learning, and incremental learning</strong> to reduce the need for manual data labeling while continuously adapting to changing network traffic.</p>
+<h2 id="research">Research<a hidden class="anchor" aria-hidden="true" href="#research">#</a></h2>
+<p>The proposed IDS combines two detection modules:</p>
+<ul>
+<li>A <strong>Deep Neural Network (DNN)</strong> for detecting known attacks.</li>
+<li><strong>KNN-based anomaly detection</strong> for identifying potentially unknown attacks.</li>
+</ul>
+<p>An active-learning strategy selects the most uncertain and anomalous network samples for review by a security expert. The newly labeled data are then used to retrain the DNN, allowing the system to learn newly discovered attacks over time.</p>
+<p>Network traffic is processed using <strong>sliding windows</strong>, making the system incremental and able to adapt as new types of attacks appear.</p>
+<h2 id="results">Results<a hidden class="anchor" aria-hidden="true" href="#results">#</a></h2>
+<p>Experiments were performed using the <strong>CICIDS2017 dataset</strong>, containing normal traffic and several types of cyberattacks.</p>
+<ul>
+<li>Using only <strong>13% of the training data for labeling</strong> achieved performance comparable to using the full training dataset.</li>
+<li>The system successfully learned to detect previously unseen attacks as they appeared.</li>
+<li>For example, after learning a new <strong>Port Scan</strong> attack, AUC recovered from below <strong>0.50 to around 0.96</strong>.</li>
+<li>The approach significantly reduces the labeling effort required from security experts while improving detection over time.</li>
+</ul>
+<p>Future work includes multi-class attack classification, improved unsupervised detection, and methods for explaining newly detected attacks.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="//localhost:1313/tags/quench-detection/">Quench Detection</a></li>
+      <li><a href="//localhost:1313/tags/srf-cavities/">SRF Cavities</a></li>
+      <li><a href="//localhost:1313/tags/particle-accelerators/">Particle Accelerators</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="//localhost:1313/">L. Boukela</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

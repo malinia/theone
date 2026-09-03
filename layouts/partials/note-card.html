@@ -1,0 +1,23 @@
+<article class="project-card note-card">
+
+  <div class="project-card-content">
+
+    <h3>{{ .Title }}</h3>
+
+    {{- with .Description }}
+    <p>{{ . }}</p>
+    {{- end }}
+
+    {{- with .Params.tags }}
+    <div class="project-tags">
+      {{- range . }}
+      <span>{{ . }}</span>
+      {{- end }}
+    </div>
+    {{- end }}
+
+  </div>
+
+  <a class="entry-link" aria-label="Read {{ .Title }}" href="{{ .RelPermalink }}"></a>
+
+</article>

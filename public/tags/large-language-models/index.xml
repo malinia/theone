@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Large Language Models on L. Boukela</title>
+    <link>//localhost:1313/tags/large-language-models/</link>
+    <description>Recent content in Large Language Models on L. Boukela</description>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/large-language-models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Agentic AI - Extended</title>
+      <link>//localhost:1313/posts/notes/note5-agenticai/details/</link>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/notes/note5-agenticai/details/</guid>
+      <description>A practical and technical introduction to Agentic AI, covering agents, tools, memory, planning, applications, and research.</description>
+    </item>
+  </channel>
+</rss>

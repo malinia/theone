@@ -6,58 +6,385 @@
     <description>Recent content in Posts on L. Boukela</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jul 2025 18:03:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>New Topic</title>
-      <link>//localhost:1313/posts/ml/new-topic/</link>
-      <pubDate>Sun, 20 Jul 2025 18:03:00 +0200</pubDate>
-      <guid>//localhost:1313/posts/ml/new-topic/</guid>
-      <description></description>
+      <title>Publications</title>
+      <link>//localhost:1313/posts/publications/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/publications/</guid>
+      <description>&lt;div class=&#34;publications-section&#34;&gt;
+&lt;h3 id=&#34;peer-reviewed-publications&#34;&gt;Peer-Reviewed Publications&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2025.1553993/full&#34;&gt;Exploring NAS for Anomaly Detection in Superconducting Cavities of Particle Accelerators&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, J. Branlard, A. Eichler — &lt;em&gt;Frontiers in Physics&lt;/em&gt;, 2025.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S2405896324003355&#34;&gt;A Two-Stage Machine Learning-Aided Approach for Quench Identification at the European XFEL&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, A. Eichler, J. Branlard, N. Z. Jomhari — &lt;em&gt;IFAC-PapersOnLine&lt;/em&gt;, 2024.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://journals.sagepub.com/doi/10.3233/IDA-215906&#34;&gt;An Approach for Unsupervised Contextual Anomaly Detection and Characterization&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang, M. Yacoub, S. Bouzefrane, S. B. B. Ahmadi — &lt;em&gt;Intelligent Data Analysis&lt;/em&gt;, 2022.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s10489-020-01903-0&#34;&gt;An Intelligent and Blind Dual-Colour Image Watermarking for Authentication and Copyright Protection&lt;/a&gt; — S. B. B. Ahmadi, G. Zhang, M. Rabbani, &lt;strong&gt;L. Boukela&lt;/strong&gt;, H. Jelodar — &lt;em&gt;Applied Intelligence&lt;/em&gt;, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s12243-020-00780-5&#34;&gt;A Modified LOF-Based Approach for Outlier Characterization in IoT&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang, M. Yacoub, S. Bouzefrane, S. B. B. Ahmadi, H. Jelodar — &lt;em&gt;Annals of Telecommunications&lt;/em&gt;, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s11042-020-09755-z&#34;&gt;A NLP Framework Based on Meaningful Latent-Topic Detection and Sentiment Analysis via Fuzzy Lattice Reasoning on YouTube Comments&lt;/a&gt; — H. Jelodar, Y. Wang, M. Rabbani, S. B. B. Ahmadi, &lt;strong&gt;L. Boukela&lt;/strong&gt;, R. Zhao, R. S. A. Larik — &lt;em&gt;Multimedia Tools and Applications&lt;/em&gt;, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s00371-020-01808-6&#34;&gt;An Intelligent and Blind Image Watermarking Scheme Based on Hybrid SVD Transforms Using Human Visual System Characteristics&lt;/a&gt; — S. B. B. Ahmadi, G. Zhang, S. Wei, &lt;strong&gt;L. Boukela&lt;/strong&gt; — &lt;em&gt;The Visual Computer&lt;/em&gt;, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://journals.sagepub.com/doi/10.3233/IDA-194656&#34;&gt;An Outlier Ensemble for Unsupervised Anomaly Detection in Honeypots Data&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang, S. Bouzefrane, J. Zhou — &lt;em&gt;Intelligent Data Analysis&lt;/em&gt;, 2020.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.worldscientific.com/doi/abs/10.1142/S0218126620502485&#34;&gt;A Hybrid Fuzzy System via Topic Model for Recommending Highlight Topics of CQA in Developer Communities&lt;/a&gt; — H. Jelodar, Y. Wang, A. Vajdi, M. Rabbani, R. Zhao, &lt;strong&gt;L. Boukela&lt;/strong&gt;, H. Li — &lt;em&gt;Journal of Circuits, Systems and Computers&lt;/em&gt;, 2020.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;conference-publications&#34;&gt;Conference Publications&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;Enhancing Quench Detection in SRF Cavities at the European XFEL: Machine Learning Approaches and Practical Challenges&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt; — &lt;em&gt;5th ICFA Workshop on Machine Learning for Particle Accelerators&lt;/em&gt;, 2025.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;#&#34;&gt;Enhancing Quench Detection in SRF Cavities at the European XFEL: Towards Machine Learning Approaches and Practical Challenges&lt;/a&gt; — A. Eichler, N. Shehzad, J. Branlard, &lt;strong&gt;L. Boukela&lt;/strong&gt;, B. Dursun, M. Diomede, B. Richter — &lt;em&gt;Conference contribution&lt;/em&gt;, 2025.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/9539947&#34;&gt;A Near-Autonomous and Incremental Intrusion Detection System through Active Learning of Known and Unknown Attacks&lt;/a&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang, M. Yacoub, S. Bouzefrane — &lt;em&gt;2021 International Conference on Security, Pattern Analysis, and Cybernetics (SPAC)&lt;/em&gt;, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;posters-talks--presentations&#34;&gt;Posters, Talks &amp;amp; Presentations&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Enhancing Quench Detection in SRF Cavities at the European XFEL: Machine Learning Approaches and Practical Challenges&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt; — &lt;em&gt;5th ICFA Workshop on Machine Learning Applications for Particle Accelerators&lt;/em&gt;, Geneva, Switzerland, 2025.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;A Two-Stage Machine Learning-Aided Approach for Quench Identification at the European XFEL&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, A. Eichler, J. Branlard, N. Z. Jomhari — &lt;em&gt;IFAC Safe Process&lt;/em&gt;, Ferrara, Italy, 2024.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Enhanced Quench Detection at the EuXFEL Through Machine Learning&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt; — &lt;em&gt;Visualizing Offline and Live Data with AI Workshop&lt;/em&gt;, Princeton, USA, 2024.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Enhanced Quench Detection at the EuXFEL Through a Machine Learning-Powered Approach&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, A. Eichler, J. Branlard, N. Z. Jomhari — &lt;em&gt;ICFA Workshop on Machine Learning for Particle Accelerators&lt;/em&gt;, Gyeongju, South Korea, 2024.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Anomaly Detection: How to Diagnose Quenches in Superconducting Cavities?&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, Z. Jomhari, A. Eichler, J. Branlard — &lt;em&gt;Helmholtz AI Conference&lt;/em&gt;, Hamburg, Germany, 2023.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Quench Detection: How Can Machine Learning Improve the Diagnosis?&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, N. Z. Jomhari, A. Eichler, J. Branlard — &lt;em&gt;MT ARD ST3 Meeting&lt;/em&gt;, Dresden, Germany, 2023.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;A Near-Autonomous and Incremental Intrusion Detection System Through Active Learning of Known and Unknown Attacks&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang, M. Yacoub, S. Bouzefrane — &lt;em&gt;IEEE International Conference on Security, Pattern Analysis, and Cybernetics (SPAC)&lt;/em&gt;, Chengdu, China, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cybersecurity: The Unseen Attacks Bottleneck&lt;/strong&gt; — &lt;strong&gt;L. Boukela&lt;/strong&gt;, G. Zhang — &lt;em&gt;CCF 14th International Conference on Service Science (CCF ICSS)&lt;/em&gt;, Xi&amp;rsquo;an, China, 2021.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     <item>
-      <title>📚 Publications</title>
-      <link>//localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Exploring NAS for anomaly detection in superconducting cavities of particle accelerators&lt;/strong&gt;.&lt;br&gt;
-&lt;em&gt;L. Boukela, J. Branlard, A. Eichler&lt;/em&gt; – &lt;em&gt;Frontiers in Physics&lt;/em&gt;, 13:1553993 (May 2025).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;A Two-Stage Machine-Learning-Aided Approach for Quench Identification at the European XFEL&lt;/strong&gt;.&lt;br&gt;
-&lt;em&gt;L. Boukela, A. Eichler, J. Branlard, N. Z. Jomhari&lt;/em&gt; – &lt;em&gt;arXiv/CoRR&lt;/em&gt; abs/2407-08408 (2024).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;A Near-Autonomous and Incremental Intrusion-Detection System through Active Learning of Known and Unknown Attacks&lt;/strong&gt;.&lt;br&gt;
-&lt;em&gt;L. Boukela, G. Zhang, M. Yacoub, S. Bouzefrane&lt;/em&gt; – &lt;em&gt;arXiv/CoRR&lt;/em&gt; abs/2310-17430 (2023).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Posts</title>
-      <link>//localhost:1313/posts/my-second-post/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/my-second-post/</guid>
-      <description>&lt;h1 id=&#34;-welcome-to-my-hugo-powered-website&#34;&gt;🚀 Welcome to My Hugo-Powered Website&lt;/h1&gt;
-&lt;p&gt;This is the &lt;strong&gt;front page&lt;/strong&gt; of my site, built with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and the &lt;strong&gt;PaperMod&lt;/strong&gt; theme.&lt;/p&gt;
-&lt;h2 id=&#34;-about-this-site&#34;&gt;📌 About This Site&lt;/h2&gt;
-&lt;p&gt;Welcome! Here, you’ll find:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;📝 &lt;strong&gt;Articles&lt;/strong&gt; on tech, coding, and more&lt;/li&gt;
-&lt;li&gt;🎨 &lt;strong&gt;Projects &amp;amp; Portfolios&lt;/strong&gt; showcasing my work&lt;/li&gt;
-&lt;li&gt;🔗 &lt;strong&gt;Resources &amp;amp; Links&lt;/strong&gt; for learning and inspiration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-featured-content&#34;&gt;🔥 Featured Content&lt;/h2&gt;
-&lt;p&gt;💡 Check out some of my latest posts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;posts/getting-started-hugo&#34;&gt;Getting Started with Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;posts/static-site-benefits&#34;&gt;Why I Love Static Site Generators&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;posts/markdown-tips&#34;&gt;Markdown Tricks You Should Know&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;-connect-with-me&#34;&gt;🌍 Connect With Me&lt;/h2&gt;
-&lt;p&gt;📫 Email: &lt;a href=&#34;mailto:your@email.com&#34;&gt;your@email.com&lt;/a&gt;
-🐦 Twitter: &lt;a href=&#34;https://twitter.com/yourhandle&#34;&gt;@yourhandle&lt;/a&gt;
-📂 GitHub: &lt;a href=&#34;https://github.com/yourgithub&#34;&gt;yourgithub&lt;/a&gt;&lt;/p&gt;</description>
+      <title>About Me</title>
+      <link>//localhost:1313/posts/about-me/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/about-me/</guid>
+      <description>&lt;h3 id=&#34;heading&#34;&gt;👋&lt;/h3&gt;
+&lt;div class=&#34;publications-section&#34; style=&#34;font-size: 0.99rem;&#34;&gt;
+A Research-focused engineer with experience in machine learning-based anomaly detection and time series analysis. PhD graduate from Nanjing University of Science and Technology, China, with recent experience at DESY, Germany. Developed methods to address challenges related to unknown attack detection in the field of cybersecurity and fault diagnosis for complex systems in the context of particle accelerators. Built practical expertise in research, development, and analytical problem-solving. Interested in having more theoretical and production contributions in the above topics, and remain open and curious to explore other data science and artificial intelligence applications.
+&lt;/div&gt;
+&lt;div class=&#34;experience-list&#34;&gt;
+&lt;h3 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h3&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Postdoctoral&lt;/span&gt;
+    &lt;strong&gt;Postdoctoral Research Scientist&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· DESY&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;10/2022 – 10/2025&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Machine Learning for Quench Detection in Superconducting RF Cavities
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Developed machine-learning and neural-network solutions for quench detection at the European XFEL, including Neural Architecture Search models achieving a 70% reduction in model size. Worked on model optimization, online deployment, data labeling, and active-learning workflows.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Machine Learning&lt;/span&gt;
+&lt;span&gt;Neural Architecture Search&lt;/span&gt;
+&lt;span&gt;Anomaly Detection&lt;/span&gt;
+&lt;span&gt;SRF Cavities&lt;/span&gt;
+&lt;span&gt;European XFEL&lt;/span&gt;
+&lt;span&gt;Active Learning&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;PhD&lt;/span&gt;
+    &lt;strong&gt;Doctoral Researcher&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· Nanjing University of Science and Technology&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;09/2017 – 05/2022&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Machine Learning for Anomaly Detection and Cybersecurity
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Conducted research on unknown anomaly and attack detection using supervised and unsupervised machine learning, with a focus on active and continual learning. Collaborated internationally and contributed to interdisciplinary research in image watermarking and NLP.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Anomaly Detection&lt;/span&gt;
+&lt;span&gt;Cybersecurity&lt;/span&gt;
+&lt;span&gt;Machine Learning&lt;/span&gt;
+&lt;span&gt;Active Learning&lt;/span&gt;
+&lt;span&gt;Continual Learning&lt;/span&gt;
+&lt;span&gt;IoT&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Research Stay&lt;/span&gt;
+    &lt;strong&gt;Visiting Researcher&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· CNAM&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;01/2019 – 02/2019&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Research Collaboration on Anomaly Detection
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Fostered scientific discussions and research collaboration around the PhD thesis and the topic of anomaly detection, exchanging ideas and exploring approaches with researchers at CNAM.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Anomaly Detection&lt;/span&gt;
+&lt;span&gt;Research Collaboration&lt;/span&gt;
+&lt;span&gt;Machine Learning&lt;/span&gt;
+&lt;span&gt;Academic Research&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Internship&lt;/span&gt;
+    &lt;strong&gt;Postgraduate Engineer&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· LARI Lab&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;02/2015 – 07/2015&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Geolocation Embedded System
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Led the development of a geolocation embedded system based on the SIM908 module and AT91SAM7S256 microcontroller, including low-level implementation using ARM Assembly Language.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Embedded Systems&lt;/span&gt;
+&lt;span&gt;Microcontrollers&lt;/span&gt;
+&lt;span&gt;ARM&lt;/span&gt;
+&lt;span&gt;Assembly&lt;/span&gt;
+&lt;span&gt;Geolocation&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Internship&lt;/span&gt;
+    &lt;strong&gt;Graduate Student&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· LARI Lab &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;02/2013 – 07/2013&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+E-Learning Web Platform
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Contributed to the development of an e-learning web platform using PHP, MySQL, UML, and web-development technologies.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Web Development&lt;/span&gt;
+&lt;span&gt;PHP&lt;/span&gt;
+&lt;span&gt;MySQL&lt;/span&gt;
+&lt;span&gt;UML&lt;/span&gt;
+&lt;span&gt;E-Learning&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
+&lt;div class=&#34;experience-list&#34;&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;PhD&lt;/span&gt;
+    &lt;strong&gt;PhD in Computer Science&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· Nanjing University of Science and Technology, China&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;09/2016 – 08/2022&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Improvement of Unknown Attack Detection Using Machine Learning Methods
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Research focused on improving the detection of unknown attacks using machine learning methods. Completed research-related coursework and proposal development, alongside Chinese language and academic preparation.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Machine Learning&lt;/span&gt;
+&lt;span&gt;Anomaly Detection&lt;/span&gt;
+&lt;span&gt;Cybersecurity&lt;/span&gt;
+&lt;span&gt;Unknown Attack Detection&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Master&#39;s&lt;/span&gt;
+    &lt;strong&gt;Master’s in Computer Engineering&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· UMMTO&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;09/2013 – 08/2015&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Networks, Embedded Systems and Mobility
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Specialized in networks, embedded systems, and mobility. Master&#39;s thesis focused on the conception and development of a GSM/GPS-based anti-theft system for vehicles.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Computer Engineering&lt;/span&gt;
+&lt;span&gt;Networks&lt;/span&gt;
+&lt;span&gt;Embedded Systems&lt;/span&gt;
+&lt;span&gt;GSM/GPS&lt;/span&gt;
+&lt;span&gt;Mobility&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;span class=&#34;experience-type&#34;&gt;Bachelor&#39;s&lt;/span&gt;
+    &lt;strong&gt;Bachelor’s in Mathematics and Computer Science&lt;/strong&gt;
+    &lt;span class=&#34;experience-org&#34;&gt;· UMMTO, Algeria&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;experience-date&#34;&gt;09/2010 – 08/2013&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+English E-Learning Platform
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Graduation project focused on the design and development of an English e-learning platform.
+&lt;/div&gt;
+&lt;div class=&#34;experience-tags&#34;&gt;
+&lt;span&gt;Computer Science&lt;/span&gt;
+&lt;span&gt;Web Development&lt;/span&gt;
+&lt;span&gt;E-Learning&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-list&#34;&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;!-- &lt;span class=&#34;experience-type&#34;&gt;Research&lt;/span&gt; --&gt;
+    &lt;strong&gt;Research Skills&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Research Methodology &amp; Scientific Practice
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Research methodology, experimental design, data analysis, scientific literature review, scientific writing and peer review, research proposal development, project management, and research dissemination.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;!-- &lt;span class=&#34;experience-type&#34;&gt;Technical&lt;/span&gt; --&gt;
+    &lt;strong&gt;Programming &amp; Development&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Programming, Machine Learning &amp; Software Engineering
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+&lt;strong&gt;Programming:&lt;/strong&gt; Python, MATLAB, LaTeX, Jupyter, Keras, PyTorch, Qt5.
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;Machine Learning:&lt;/strong&gt; Local Outlier Factor (LOF), Active Learning, Continual Learning, LSTMs, CNNs, and Autoencoders.
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;Software Engineering:&lt;/strong&gt; Code development, CI/CD, testing, version control, packaging, documentation, and reproducible development workflows.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;!-- &lt;span class=&#34;experience-type&#34;&gt;Professional&lt;/span&gt; --&gt;
+    &lt;strong&gt;Professional Skills&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Communication, Collaboration &amp; Problem Solving
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Communication, organization, problem-solving, analytical thinking, teamwork, and collaboration developed through interdisciplinary research and international project work.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;!-- &lt;span class=&#34;experience-type&#34;&gt;Languages&lt;/span&gt; --&gt;
+    &lt;strong&gt;Language Skills&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Multilingual Communication
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+&lt;strong&gt;English:&lt;/strong&gt; Professional proficiency · 
+&lt;strong&gt;French:&lt;/strong&gt; Professional proficiency · 
+&lt;strong&gt;Arabic:&lt;/strong&gt; Native proficiency · 
+&lt;strong&gt;Chinese:&lt;/strong&gt; Intermediate · 
+&lt;strong&gt;German:&lt;/strong&gt; Elementary
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-item&#34;&gt;
+&lt;div class=&#34;experience-header&#34;&gt;
+  &lt;div class=&#34;experience-title&#34;&gt;
+    &lt;!-- &lt;span class=&#34;experience-type&#34;&gt;Personal&lt;/span&gt; --&gt;
+    &lt;strong&gt;Interests&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;experience-project&#34;&gt;
+Creative &amp; Personal Interests
+&lt;/div&gt;
+&lt;div class=&#34;experience-description&#34;&gt;
+Photography, travel, calligraphy, and cooking.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;-who-am-i&#34;&gt;🏆 Who Am I?&lt;/h3&gt;
+&lt;p&gt;I’m a passionate developer, writer, and tech enthusiast. I enjoy building &lt;strong&gt;fast, scalable websites&lt;/strong&gt; using &lt;strong&gt;Hugo&lt;/strong&gt;, &lt;strong&gt;Markdown&lt;/strong&gt;, and &lt;strong&gt;static site generators&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quench Identification on L. Boukela</title>
+    <link>//localhost:1313/tags/quench-identification/</link>
+    <description>Recent content in Quench Identification on L. Boukela</description>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/quench-identification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Two-Stage Machine Learning-Aided Approach for Quench Identification</title>
+      <link>//localhost:1313/posts/projects/two-stage-quench-identification/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/projects/two-stage-quench-identification/</guid>
+      <description>A two-stage machine-learning approach for identifying quenches in superconducting RF cavities at the European XFEL.</description>
+    </item>
+  </channel>
+</rss>

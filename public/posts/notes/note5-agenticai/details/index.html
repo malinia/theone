@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Understanding Agentic AI - Extended | L. Boukela</title>
+<meta name="keywords" content="Machine Learning, Agentic AI, Generative AI, Large Language Models">
+<meta name="description" content="A practical and technical introduction to Agentic AI, covering agents, tools, memory, planning, applications, and research.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/notes/note5-agenticai/details/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.87b66f08b42d6cb9cf21be2adaab87c8bd7259cb4843026baf6ee27db5d6c60f.css" integrity="sha256-h7ZvCLQtbLnPIb4q2quHyL1yWctIQwJrr27ifbXWxg8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/notes/note5-agenticai/details/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="L. Boukela (Alt + H)">L. Boukela</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/posts/publications/" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/notes/" title="Notes">
+                    <span>Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Understanding Agentic AI - Extended
+    </h1>
+    <div class="post-description">
+      A practical and technical introduction to Agentic AI, covering agents, tools, memory, planning, applications, and research.
+    </div>
+    <div class="post-meta"><span title='2026-08-31 00:00:00 +0000 UTC'>August 31, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="1-learning-objectives">1. Learning Objectives<a hidden class="anchor" aria-hidden="true" href="#1-learning-objectives">#</a></h2>
+<p>By the end of this note, you should be able to:</p>
+<ul>
+<li>Understand what Agentic AI means and how it differs from a traditional LLM application.</li>
+<li>Identify the main components of an AI agent.</li>
+<li>Understand how agents reason, plan, use tools, and interact with their environment.</li>
+<li>Build a simple agent using Python.</li>
+<li>Understand concepts such as memory, tool use, planning, reflection, and multi-agent systems.</li>
+<li>Identify important research papers and software frameworks.</li>
+<li>Understand the limitations and risks of autonomous AI systems.</li>
+</ul>
+<hr>
+<h2 id="2-overview">2. Overview<a hidden class="anchor" aria-hidden="true" href="#2-overview">#</a></h2>
+<p>Agentic AI refers to AI systems that can <strong>reason about a goal, decide what actions to take, use external tools, observe the results, and continue working until the task is completed</strong>.</p>
+<p>A traditional LLM application often follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>User → LLM → Answer
+</span></span></code></pre></div><p>An agentic system is more like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>             ┌───────────┐
+</span></span><span style="display:flex;"><span>             │   Goal    │
+</span></span><span style="display:flex;"><span>             └─────┬─────┘
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>              ┌─────────┐
+</span></span><span style="display:flex;"><span>              │  Agent  │
+</span></span><span style="display:flex;"><span>              └────┬────┘
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>          ┌─────────────────┐
+</span></span><span style="display:flex;"><span>          │ Reason / Plan   │
+</span></span><span style="display:flex;"><span>          └────────┬────────┘
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>             Choose Action
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>              ┌─────────┐
+</span></span><span style="display:flex;"><span>              │  Tool   │
+</span></span><span style="display:flex;"><span>              └────┬────┘
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>              Observe Result
+</span></span><span style="display:flex;"><span>                   ↓
+</span></span><span style="display:flex;"><span>                Update
+</span></span><span style="display:flex;"><span>                   │
+</span></span><span style="display:flex;"><span>                   └──────→ Repeat
+</span></span></code></pre></div><p>The important difference is <strong>the loop</strong>. The system can take multiple actions instead of producing a single response.</p>
+<p>A 2025 survey organizes agentic LLM research around three closely related capabilities: <strong>reasoning, acting, and interacting</strong>.</p>
+<hr>
+<h2 id="3-motivation-why-do-we-need-agents">3. Motivation: Why Do We Need Agents?<a hidden class="anchor" aria-hidden="true" href="#3-motivation-why-do-we-need-agents">#</a></h2>
+<p>LLMs are very good at generating and transforming information, but many real-world tasks require more than generating text.</p>
+<p>Consider the task:</p>
+<blockquote>
+<p>&ldquo;Find the latest papers about anomaly detection, compare them, create a summary, and save the results.&rdquo;</p></blockquote>
+<p>A normal chatbot can generate a response, but completing the entire task may require:</p>
+<ol>
+<li>Searching for papers.</li>
+<li>Opening and reading them.</li>
+<li>Extracting relevant information.</li>
+<li>Comparing results.</li>
+<li>Writing a report.</li>
+<li>Saving the report.</li>
+</ol>
+<p>An agent can coordinate these steps and use tools to perform actions.</p>
+<p>This changes the role of an LLM from:</p>
+<p><strong>&ldquo;Generate an answer.&rdquo;</strong></p>
+<p>to:</p>
+<p><strong>&ldquo;Figure out how to accomplish the task.&rdquo;</strong></p>
+<hr>
+<h2 id="4-intuition">4. Intuition<a hidden class="anchor" aria-hidden="true" href="#4-intuition">#</a></h2>
+<p>A useful way to think about an AI agent is as a <strong>digital worker</strong>.</p>
+<p>The LLM provides reasoning and language capabilities, while the surrounding system provides:</p>
+<ul>
+<li>Tools</li>
+<li>Memory</li>
+<li>State</li>
+<li>Planning</li>
+<li>Execution</li>
+<li>Feedback</li>
+<li>Access to external information</li>
+</ul>
+<p>For example, a research agent might have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>                  Research Agent
+</span></span><span style="display:flex;"><span>                        │
+</span></span><span style="display:flex;"><span>       ┌────────────────┼────────────────┐
+</span></span><span style="display:flex;"><span>       ↓                ↓                ↓
+</span></span><span style="display:flex;"><span>    Search           Papers          Database
+</span></span><span style="display:flex;"><span>       │                │                │
+</span></span><span style="display:flex;"><span>       └────────────────┼────────────────┘
+</span></span><span style="display:flex;"><span>                        ↓
+</span></span><span style="display:flex;"><span>                     Memory
+</span></span><span style="display:flex;"><span>                        ↓
+</span></span><span style="display:flex;"><span>                    Planning
+</span></span><span style="display:flex;"><span>                        ↓
+</span></span><span style="display:flex;"><span>                    Report
+</span></span></code></pre></div><p>The LLM itself is not necessarily the entire agent. The <strong>agent is the complete system surrounding the model</strong>.</p>
+<hr>
+<h2 id="5-key-concepts">5. Key Concepts<a hidden class="anchor" aria-hidden="true" href="#5-key-concepts">#</a></h2>
+<h3 id="51-agent">5.1 Agent<a hidden class="anchor" aria-hidden="true" href="#51-agent">#</a></h3>
+<p>An agent is a system capable of pursuing a goal by selecting and executing actions.</p>
+<p>A simple abstraction is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Agent = Model + Tools + State + Control Loop
+</span></span></code></pre></div><p>More sophisticated systems add memory, planning, reflection, multiple agents, and safety mechanisms.</p>
+<hr>
+<h3 id="52-tool-use">5.2 Tool Use<a hidden class="anchor" aria-hidden="true" href="#52-tool-use">#</a></h3>
+<p>Tools allow an agent to interact with the outside world.</p>
+<p>Examples include:</p>
+<ul>
+<li>Web search</li>
+<li>Python execution</li>
+<li>Databases</li>
+<li>APIs</li>
+<li>File systems</li>
+<li>Calculators</li>
+<li>Email</li>
+<li>Software development tools</li>
+<li>Laboratory or industrial systems</li>
+</ul>
+<p>Tool use is one of the key developments behind modern agentic systems. Toolformer demonstrated that language models can learn when and how to call external APIs such as calculators, search engines, and question-answering systems.</p>
+<hr>
+<h3 id="53-planning">5.3 Planning<a hidden class="anchor" aria-hidden="true" href="#53-planning">#</a></h3>
+<p>Complex tasks often need to be divided into smaller steps.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Goal:
+</span></span><span style="display:flex;"><span>Write a report about RAG
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>1. Find important papers
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>2. Read papers
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>3. Identify key concepts
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>4. Find implementations
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>5. Compare approaches
+</span></span><span style="display:flex;"><span>       ↓
+</span></span><span style="display:flex;"><span>6. Write report
+</span></span></code></pre></div><p>Planning can be explicit, where the agent creates a task list, or implicit, where the model decides the next action step-by-step.</p>
+<hr>
+<h3 id="54-reasoning-and-acting">5.4 Reasoning and Acting<a hidden class="anchor" aria-hidden="true" href="#54-reasoning-and-acting">#</a></h3>
+<p>One of the influential approaches is <strong>ReAct</strong>, which combines reasoning and action in an iterative loop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Reason
+</span></span><span style="display:flex;"><span>  ↓
+</span></span><span style="display:flex;"><span>Act
+</span></span><span style="display:flex;"><span>  ↓
+</span></span><span style="display:flex;"><span>Observe
+</span></span><span style="display:flex;"><span>  ↓
+</span></span><span style="display:flex;"><span>Reason
+</span></span><span style="display:flex;"><span>  ↓
+</span></span><span style="display:flex;"><span>Act
+</span></span><span style="display:flex;"><span>  ↓
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>The original ReAct paper showed that interleaving reasoning with actions allows models to interact with external information sources and improve performance on reasoning and interactive decision-making tasks.</p>
+<hr>
+<h3 id="55-memory">5.5 Memory<a hidden class="anchor" aria-hidden="true" href="#55-memory">#</a></h3>
+<p>Agents may need information beyond the current context window.</p>
+<p>Memory can include:</p>
+<ul>
+<li>Conversation history</li>
+<li>User preferences</li>
+<li>Previous observations</li>
+<li>Retrieved documents</li>
+<li>Past actions</li>
+<li>Learned information</li>
+</ul>
+<p>A common distinction is:</p>
+<p><strong>Short-term memory</strong></p>
+<p>Information relevant to the current task or conversation.</p>
+<p><strong>Long-term memory</strong></p>
+<p>Information stored and retrieved across multiple interactions.</p>
+<p>Generative Agents demonstrated an architecture where observations are stored as experiences, synthesized into higher-level reflections, and retrieved later to influence planning and behavior.</p>
+<hr>
+<h3 id="56-reflection">5.6 Reflection<a hidden class="anchor" aria-hidden="true" href="#56-reflection">#</a></h3>
+<p>An agent can evaluate its own intermediate results.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Generate solution
+</span></span><span style="display:flex;"><span>      ↓
+</span></span><span style="display:flex;"><span>Evaluate solution
+</span></span><span style="display:flex;"><span>      ↓
+</span></span><span style="display:flex;"><span>Identify problems
+</span></span><span style="display:flex;"><span>      ↓
+</span></span><span style="display:flex;"><span>Improve solution
+</span></span></code></pre></div><p>Reflection can improve performance on complex tasks, although it also introduces additional computation and does not guarantee that the agent will correctly identify its own mistakes.</p>
+<hr>
+<h3 id="57-multi-agent-systems">5.7 Multi-Agent Systems<a hidden class="anchor" aria-hidden="true" href="#57-multi-agent-systems">#</a></h3>
+<p>Instead of using one agent, a system can use several specialized agents.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>                 Manager Agent
+</span></span><span style="display:flex;"><span>                       │
+</span></span><span style="display:flex;"><span>        ┌──────────────┼──────────────┐
+</span></span><span style="display:flex;"><span>        ↓              ↓              ↓
+</span></span><span style="display:flex;"><span>   Researcher       Coder         Reviewer
+</span></span><span style="display:flex;"><span>        │              │              │
+</span></span><span style="display:flex;"><span>        └──────────────┼──────────────┘
+</span></span><span style="display:flex;"><span>                       ↓
+</span></span><span style="display:flex;"><span>                    Result
+</span></span></code></pre></div><p>Different agents can have different tools, instructions, and responsibilities.</p>
+<p>This can be useful for complex workflows but also introduces additional coordination and reliability problems.</p>
+<hr>
+<h2 id="6-how-does-an-agent-work">6. How Does an Agent Work?<a hidden class="anchor" aria-hidden="true" href="#6-how-does-an-agent-work">#</a></h2>
+<p>A basic agent loop can be represented as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>User Goal
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Understand Task
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Plan / Decide Next Step
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Choose Tool
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Execute Tool
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Observe Result
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Update State
+</span></span><span style="display:flex;"><span>   ↓
+</span></span><span style="display:flex;"><span>Task Complete?
+</span></span><span style="display:flex;"><span>   ├── No → Continue
+</span></span><span style="display:flex;"><span>   └── Yes → Generate Result
+</span></span></code></pre></div><p>In pseudocode:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> task_complete:
+</span></span><span style="display:flex;"><span>    decision <span style="color:#f92672">=</span> model(state)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> decision<span style="color:#f92672">.</span>requires_tool:
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> execute_tool(decision<span style="color:#f92672">.</span>tool)
+</span></span><span style="display:flex;"><span>        state<span style="color:#f92672">.</span>update(result)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> decision<span style="color:#f92672">.</span>answer
+</span></span></code></pre></div><p>This simple loop is the foundation of many agentic architectures.</p>
+<hr>
+<h2 id="7-main-approaches">7. Main Approaches<a hidden class="anchor" aria-hidden="true" href="#7-main-approaches">#</a></h2>
+<h3 id="react-agents">ReAct Agents<a hidden class="anchor" aria-hidden="true" href="#react-agents">#</a></h3>
+<p>Combine reasoning and action in an iterative loop.</p>
+<p><strong>Strength:</strong> Simple and flexible.</p>
+<p><strong>Limitation:</strong> Can require many model/tool calls and may accumulate errors.</p>
+<hr>
+<h3 id="planning-based-agents">Planning-Based Agents<a hidden class="anchor" aria-hidden="true" href="#planning-based-agents">#</a></h3>
+<p>First create a plan and then execute its individual steps.</p>
+<p><strong>Strength:</strong> Useful for long, structured tasks.</p>
+<p><strong>Limitation:</strong> An initial plan can become outdated when the environment changes.</p>
+<hr>
+<h3 id="reflection-based-agents">Reflection-Based Agents<a hidden class="anchor" aria-hidden="true" href="#reflection-based-agents">#</a></h3>
+<p>Generate a result, evaluate it, and improve it.</p>
+<p><strong>Strength:</strong> Useful for iterative tasks such as writing and coding.</p>
+<p><strong>Limitation:</strong> Additional model calls increase cost and latency.</p>
+<hr>
+<h3 id="tool-using-agents">Tool-Using Agents<a hidden class="anchor" aria-hidden="true" href="#tool-using-agents">#</a></h3>
+<p>Focus on giving an LLM access to external functions and APIs.</p>
+<p><strong>Strength:</strong> Extends the capabilities of the model beyond its internal knowledge.</p>
+<p><strong>Limitation:</strong> Tool selection and arguments can be incorrect.</p>
+<hr>
+<h3 id="multi-agent-systems">Multi-Agent Systems<a hidden class="anchor" aria-hidden="true" href="#multi-agent-systems">#</a></h3>
+<p>Multiple specialized agents collaborate on a problem.</p>
+<p><strong>Strength:</strong> Enables specialization and parallel work.</p>
+<p><strong>Limitation:</strong> Coordination can become complex and unreliable.</p>
+<hr>
+<h2 id="8-practical-python-example">8. Practical Python Example<a hidden class="anchor" aria-hidden="true" href="#8-practical-python-example">#</a></h2>
+<p>A minimal tool-using agent can be conceptualized as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.agents <span style="color:#f92672">import</span> create_agent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.tools <span style="color:#f92672">import</span> tool
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@tool</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculate</span>(expression: str) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Calculate a mathematical expression.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> str(eval(expression))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> create_agent(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your-model&#34;</span>,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[calculate],
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>invoke({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;messages&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;Calculate 125 * 37&#34;</span>}
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>The important concept is not the particular framework. The agent receives a task, decides whether a tool is needed, calls the tool, and uses the result to produce its response.</p>
+<p>Modern LangChain agents are built around this model/tool loop, while LangGraph provides lower-level orchestration for stateful and long-running agents.</p>
+<hr>
+<h2 id="9-python-libraries--tools">9. Python Libraries &amp; Tools<a hidden class="anchor" aria-hidden="true" href="#9-python-libraries--tools">#</a></h2>
+<p>The agent ecosystem is evolving rapidly, but several important frameworks are worth knowing.</p>
+<h3 id="langchain--langgraph">LangChain / LangGraph<a hidden class="anchor" aria-hidden="true" href="#langchain--langgraph">#</a></h3>
+<p>LangChain provides higher-level components for building LLM applications and agents.</p>
+<p><strong>LangGraph</strong> provides lower-level orchestration for long-running, stateful agents, including persistence, streaming, human-in-the-loop workflows, and durable execution.</p>
+<h3 id="microsoft-autogen">Microsoft AutoGen<a hidden class="anchor" aria-hidden="true" href="#microsoft-autogen">#</a></h3>
+<p>AutoGen provides abstractions for building conversational and multi-agent systems.</p>
+<h3 id="crewai">CrewAI<a hidden class="anchor" aria-hidden="true" href="#crewai">#</a></h3>
+<p>CrewAI focuses on collaborative agents, roles, tasks, and multi-agent workflows.</p>
+<h3 id="other-important-components">Other Important Components<a hidden class="anchor" aria-hidden="true" href="#other-important-components">#</a></h3>
+<p>Agent systems commonly use additional technologies for:</p>
+<ul>
+<li>Vector databases</li>
+<li>Web search</li>
+<li>Model APIs</li>
+<li>Observability</li>
+<li>Evaluation</li>
+<li>Code execution</li>
+<li>Sandboxed environments</li>
+<li>Persistent storage</li>
+</ul>
+<p>The framework is only one part of an agent architecture.</p>
+<hr>
+<h2 id="10-applications">10. Applications<a hidden class="anchor" aria-hidden="true" href="#10-applications">#</a></h2>
+<p>Agentic AI is particularly useful for tasks that involve multiple steps, decisions, and external tools.</p>
+<h3 id="research-agents">Research Agents<a hidden class="anchor" aria-hidden="true" href="#research-agents">#</a></h3>
+<p>Agents can search papers, retrieve information, compare studies, and generate reports.</p>
+<h3 id="software-development">Software Development<a hidden class="anchor" aria-hidden="true" href="#software-development">#</a></h3>
+<p>Agents can inspect code, write new code, execute tests, debug errors, and iterate.</p>
+<h3 id="data-analysis">Data Analysis<a hidden class="anchor" aria-hidden="true" href="#data-analysis">#</a></h3>
+<p>An agent can load datasets, write Python code, generate visualizations, analyze results, and produce a report.</p>
+<h3 id="customer-support">Customer Support<a hidden class="anchor" aria-hidden="true" href="#customer-support">#</a></h3>
+<p>Agents can retrieve customer information, search documentation, and perform actions through business systems.</p>
+<h3 id="scientific-research">Scientific Research<a hidden class="anchor" aria-hidden="true" href="#scientific-research">#</a></h3>
+<p>Agents can help formulate hypotheses, search literature, analyze experimental data, and coordinate computational workflows.</p>
+<h3 id="automation">Automation<a hidden class="anchor" aria-hidden="true" href="#automation">#</a></h3>
+<p>Agents can interact with APIs and business systems to automate complex workflows.</p>
+<p>A 2025 survey highlights applications including medical diagnosis, logistics, financial analysis, and scientific research.</p>
+<hr>
+<h2 id="11-advantages--limitations">11. Advantages &amp; Limitations<a hidden class="anchor" aria-hidden="true" href="#11-advantages--limitations">#</a></h2>
+<h3 id="advantages">Advantages<a hidden class="anchor" aria-hidden="true" href="#advantages">#</a></h3>
+<ul>
+<li>Can perform multi-step tasks.</li>
+<li>Can use external tools and information.</li>
+<li>Can adapt to intermediate results.</li>
+<li>Can automate complex workflows.</li>
+<li>Can combine reasoning with actions.</li>
+<li>Can work with heterogeneous data sources.</li>
+</ul>
+<h3 id="limitations">Limitations<a hidden class="anchor" aria-hidden="true" href="#limitations">#</a></h3>
+<ul>
+<li>LLMs can still hallucinate.</li>
+<li>Agents can choose incorrect tools.</li>
+<li>Tool calls can fail.</li>
+<li>Long tasks can accumulate errors.</li>
+<li>Multiple model calls can be expensive.</li>
+<li>Agent behavior can be difficult to reproduce.</li>
+<li>Autonomous actions introduce security and safety risks.</li>
+</ul>
+<h3 id="when-should-you-use-it">When Should You Use It?<a hidden class="anchor" aria-hidden="true" href="#when-should-you-use-it">#</a></h3>
+<p>Agentic approaches are most useful when a problem requires:</p>
+<p><strong>Multiple steps + decisions + external tools + adaptation.</strong></p>
+<h3 id="when-should-you-not-use-it">When Should You Not Use It?<a hidden class="anchor" aria-hidden="true" href="#when-should-you-not-use-it">#</a></h3>
+<p>If the task can be reliably solved with a simple deterministic program, traditional automation may be preferable.</p>
+<p>An agent is not automatically better simply because it is more autonomous.</p>
+<hr>
+<h2 id="12-important-papers">12. Important Papers<a hidden class="anchor" aria-hidden="true" href="#12-important-papers">#</a></h2>
+<h3 id="react--2022">ReAct — 2022<a hidden class="anchor" aria-hidden="true" href="#react--2022">#</a></h3>
+<p><strong>Yao et al., &ldquo;ReAct: Synergizing Reasoning and Acting in Language Models.&rdquo;</strong></p>
+<p>One of the foundational papers for modern LLM agents. It introduced an approach where reasoning and actions are interleaved, allowing the model to interact with external environments and information sources.</p>
+<h3 id="toolformer--2023">Toolformer — 2023<a hidden class="anchor" aria-hidden="true" href="#toolformer--2023">#</a></h3>
+<p><strong>Schick et al., &ldquo;Toolformer: Language Models Can Teach Themselves to Use Tools.&rdquo;</strong></p>
+<p>Explored how language models can learn to decide when to call APIs, what arguments to provide, and how to incorporate tool results.</p>
+<h3 id="generative-agents--2023">Generative Agents — 2023<a hidden class="anchor" aria-hidden="true" href="#generative-agents--2023">#</a></h3>
+<p><strong>Park et al., &ldquo;Generative Agents: Interactive Simulacra of Human Behavior.&rdquo;</strong></p>
+<p>Introduced an architecture combining memory, reflection, planning, and observation to create believable interactive agents.</p>
+<h3 id="agentic-large-language-models--2025">Agentic Large Language Models — 2025<a hidden class="anchor" aria-hidden="true" href="#agentic-large-language-models--2025">#</a></h3>
+<p><strong>Plaat et al., &ldquo;Agentic Large Language Models, a survey.&rdquo;</strong></p>
+<p>Provides a broad overview of the field and organizes research around reasoning, acting, and interaction. It is particularly useful as an entry point into the broader literature.</p>
+<hr>
+<h2 id="13-related-concepts">13. Related Concepts<a hidden class="anchor" aria-hidden="true" href="#13-related-concepts">#</a></h2>
+<p>Agentic AI sits at the intersection of several areas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>                 Large Language Models
+</span></span><span style="display:flex;"><span>                         │
+</span></span><span style="display:flex;"><span>          ┌──────────────┼──────────────┐
+</span></span><span style="display:flex;"><span>          ↓              ↓              ↓
+</span></span><span style="display:flex;"><span>       Reasoning       RAG          Tool Use
+</span></span><span style="display:flex;"><span>          │              │              │
+</span></span><span style="display:flex;"><span>          └──────────────┼──────────────┘
+</span></span><span style="display:flex;"><span>                         ↓
+</span></span><span style="display:flex;"><span>                     AI Agents
+</span></span><span style="display:flex;"><span>                         │
+</span></span><span style="display:flex;"><span>              ┌──────────┴──────────┐
+</span></span><span style="display:flex;"><span>              ↓                     ↓
+</span></span><span style="display:flex;"><span>           Memory              Planning
+</span></span><span style="display:flex;"><span>              │                     │
+</span></span><span style="display:flex;"><span>              └──────────┬──────────┘
+</span></span><span style="display:flex;"><span>                         ↓
+</span></span><span style="display:flex;"><span>                  Multi-Agent AI
+</span></span></code></pre></div><p>Related topics worth studying:</p>
+<ul>
+<li>Large Language Models</li>
+<li>Prompt Engineering</li>
+<li>Function Calling</li>
+<li>Tool Use</li>
+<li>RAG</li>
+<li>Vector Databases</li>
+<li>Embeddings</li>
+<li>Reinforcement Learning</li>
+<li>Planning</li>
+<li>Memory</li>
+<li>Multi-Agent Systems</li>
+<li>Human-in-the-Loop AI</li>
+<li>AI Evaluation</li>
+</ul>
+<hr>
+<h2 id="14-practical-considerations">14. Practical Considerations<a hidden class="anchor" aria-hidden="true" href="#14-practical-considerations">#</a></h2>
+<p>Building a useful agent is not only about selecting a good LLM.</p>
+<p>Important engineering considerations include:</p>
+<h3 id="reliability">Reliability<a hidden class="anchor" aria-hidden="true" href="#reliability">#</a></h3>
+<p>How often does the agent complete the task correctly?</p>
+<h3 id="cost">Cost<a hidden class="anchor" aria-hidden="true" href="#cost">#</a></h3>
+<p>How many model and tool calls are required?</p>
+<h3 id="latency">Latency<a hidden class="anchor" aria-hidden="true" href="#latency">#</a></h3>
+<p>How long does a complete task take?</p>
+<h3 id="observability">Observability<a hidden class="anchor" aria-hidden="true" href="#observability">#</a></h3>
+<p>Can we inspect what the agent did and why?</p>
+<h3 id="security">Security<a hidden class="anchor" aria-hidden="true" href="#security">#</a></h3>
+<p>What happens if the agent receives malicious instructions or accesses sensitive tools?</p>
+<h3 id="human-oversight">Human Oversight<a hidden class="anchor" aria-hidden="true" href="#human-oversight">#</a></h3>
+<p>Which actions should require human approval?</p>
+<h3 id="state-and-memory">State and Memory<a hidden class="anchor" aria-hidden="true" href="#state-and-memory">#</a></h3>
+<p>What information should persist between tasks?</p>
+<h3 id="evaluation">Evaluation<a hidden class="anchor" aria-hidden="true" href="#evaluation">#</a></h3>
+<p>How do we measure whether an agent is actually improving?</p>
+<p>For production systems, frameworks increasingly provide mechanisms for persistence, tracing, guardrails, retries, and human approval.</p>
+<hr>
+<h2 id="15-exercises">15. Exercises<a hidden class="anchor" aria-hidden="true" href="#15-exercises">#</a></h2>
+<h3 id="exercise-1--conceptual">Exercise 1 — Conceptual<a hidden class="anchor" aria-hidden="true" href="#exercise-1--conceptual">#</a></h3>
+<p>Explain the difference between:</p>
+<ol>
+<li>A chatbot</li>
+<li>An LLM application</li>
+<li>A tool-using LLM</li>
+<li>An AI agent</li>
+<li>A multi-agent system</li>
+</ol>
+<hr>
+<h3 id="exercise-2--build-a-simple-agent">Exercise 2 — Build a Simple Agent<a hidden class="anchor" aria-hidden="true" href="#exercise-2--build-a-simple-agent">#</a></h3>
+<p>Create an agent with two tools:</p>
+<ul>
+<li>A calculator</li>
+<li>A web/search function</li>
+</ul>
+<p>Ask it questions that require both tools.</p>
+<hr>
+<h3 id="exercise-3--add-memory">Exercise 3 — Add Memory<a hidden class="anchor" aria-hidden="true" href="#exercise-3--add-memory">#</a></h3>
+<p>Modify the agent so that it remembers information between multiple interactions.</p>
+<hr>
+<h3 id="challenge">Challenge<a hidden class="anchor" aria-hidden="true" href="#challenge">#</a></h3>
+<p>Build a small <strong>research assistant</strong> that:</p>
+<ol>
+<li>Searches for papers.</li>
+<li>Retrieves relevant documents.</li>
+<li>Extracts key information.</li>
+<li>Compares papers.</li>
+<li>Produces a structured report.</li>
+</ol>
+<hr>
+<h2 id="16-open-questions--future-directions">16. Open Questions &amp; Future Directions<a hidden class="anchor" aria-hidden="true" href="#16-open-questions--future-directions">#</a></h2>
+<p>Agentic AI is still an active research area.</p>
+<p>Important questions include:</p>
+<ul>
+<li>How can agents become more reliable?</li>
+<li>How should long-term memory be represented?</li>
+<li>How can agents learn from their own experience?</li>
+<li>How should multi-agent systems coordinate?</li>
+<li>How can agent behavior be evaluated consistently?</li>
+<li>How can we prevent harmful or unintended actions?</li>
+<li>How much autonomy should an agent have?</li>
+<li>Can agents perform meaningful scientific discovery?</li>
+<li>How can agents operate efficiently on constrained hardware?</li>
+</ul>
+<p>A major research challenge is moving from agents that <strong>appear capable</strong> to systems that are <strong>predictably reliable</strong>.</p>
+<hr>
+<h2 id="17-my-research--projects">17. My Research / Projects<a hidden class="anchor" aria-hidden="true" href="#17-my-research--projects">#</a></h2>
+<p>This section can be expanded as Agentic AI becomes relevant to future projects.</p>
+<h3 id="project">Project<a hidden class="anchor" aria-hidden="true" href="#project">#</a></h3>
+<p><strong>Objective:</strong> &hellip;</p>
+<p><strong>Agent architecture:</strong> &hellip;</p>
+<p><strong>Tools:</strong> &hellip;</p>
+<p><strong>Memory:</strong> &hellip;</p>
+<p><strong>Model:</strong> &hellip;</p>
+<p><strong>Evaluation:</strong> &hellip;</p>
+<p><strong>Results:</strong> &hellip;</p>
+<p><strong>Lessons learned:</strong> &hellip;</p>
+<hr>
+<h2 id="18-key-takeaways">18. Key Takeaways<a hidden class="anchor" aria-hidden="true" href="#18-key-takeaways">#</a></h2>
+<ul>
+<li>Agentic AI extends LLMs with <strong>actions, tools, state, and feedback loops</strong>.</li>
+<li>The core idea is not simply generating an answer, but <strong>working toward a goal</strong>.</li>
+<li>ReAct is an important foundation for combining reasoning and action.</li>
+<li>Tools allow agents to interact with external systems.</li>
+<li>Memory allows agents to maintain information across interactions.</li>
+<li>Planning and reflection can help with complex tasks.</li>
+<li>Multi-agent systems allow specialized agents to collaborate.</li>
+<li>Autonomy introduces new challenges around reliability, security, cost, and evaluation.</li>
+</ul>
+<hr>
+<h2 id="19-quick-summary">19. Quick Summary<a hidden class="anchor" aria-hidden="true" href="#19-quick-summary">#</a></h2>
+<p><strong>Agentic AI</strong> is about building AI systems that can do more than generate text: they can <strong>reason, plan, use tools, remember information, and take actions</strong>.</p>
+<p>The basic idea is:</p>
+<p><strong>Goal → Reason → Act → Observe → Repeat</strong></p>
+<p>The most important shift is from <strong>AI that answers questions</strong> to <strong>AI that can accomplish tasks</strong>.</p>
+<p>Agentic AI is particularly promising for research, software development, data analysis, automation, and scientific workflows. However, greater autonomy also means greater responsibility for reliability, security, and human oversight.</p>
+<hr>
+<h2 id="20-further-reading">20. Further Reading<a hidden class="anchor" aria-hidden="true" href="#20-further-reading">#</a></h2>
+<h3 id="papers">Papers<a hidden class="anchor" aria-hidden="true" href="#papers">#</a></h3>
+<ul>
+<li>Yao et al. — <em>ReAct: Synergizing Reasoning and Acting in Language Models</em></li>
+<li>Schick et al. — <em>Toolformer: Language Models Can Teach Themselves to Use Tools</em></li>
+<li>Park et al. — <em>Generative Agents: Interactive Simulacra of Human Behavior</em></li>
+<li>Plaat et al. — <em>Agentic Large Language Models, a survey</em></li>
+</ul>
+<h3 id="tools">Tools<a hidden class="anchor" aria-hidden="true" href="#tools">#</a></h3>
+<ul>
+<li>LangChain</li>
+<li>LangGraph</li>
+<li>Microsoft AutoGen</li>
+<li>CrewAI</li>
+</ul>
+<h3 id="related-topics">Related Topics<a hidden class="anchor" aria-hidden="true" href="#related-topics">#</a></h3>
+<ul>
+<li>Large Language Models</li>
+<li>RAG</li>
+<li>Vector Databases</li>
+<li>Active Learning</li>
+<li>Anomaly Detection</li>
+</ul>
+<hr>
+<h2 id="21-references">21. References<a hidden class="anchor" aria-hidden="true" href="#21-references">#</a></h2>
+<ol>
+<li>Yao, S. et al. (2022). <em>ReAct: Synergizing Reasoning and Acting in Language Models.</em></li>
+<li>Schick, T. et al. (2023). <em>Toolformer: Language Models Can Teach Themselves to Use Tools.</em></li>
+<li>Park, J. S. et al. (2023). <em>Generative Agents: Interactive Simulacra of Human Behavior.</em></li>
+<li>Plaat, A. et al. (2025). <em>Agentic Large Language Models, a survey.</em></li>
+<li>LangGraph Documentation — Agent orchestration and stateful agent systems.</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="//localhost:1313/tags/agentic-ai/">Agentic AI</a></li>
+      <li><a href="//localhost:1313/tags/generative-ai/">Generative AI</a></li>
+      <li><a href="//localhost:1313/tags/large-language-models/">Large Language Models</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="//localhost:1313/">L. Boukela</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

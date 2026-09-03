@@ -1,0 +1,120 @@
+
+/* =========================================
+   Publications
+   ========================================= */
+
+/* Main publication table */
+
+.post-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    border: none;
+    background: rgba(120, 120, 120, 0.06);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* Hide empty Markdown header */
+
+.post-content table thead {
+    display: none;
+}
+
+/* Individual publication row */
+
+.post-content table tbody tr {
+    background: #ffffff;
+    cursor: pointer;
+    transition:
+        box-shadow 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Publication cell */
+
+.post-content table td {
+    padding: 17px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    line-height: 1.65;
+}
+
+/* Hover effect */
+
+.post-content table tbody tr:hover {
+    background: #f8fbfd;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   Publication text
+   ========================================= */
+
+/* Title */
+
+.post-content table a {
+    font-weight: 500;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* Link hover */
+
+.post-content table a:hover,
+.post-content table a:focus {
+    text-decoration: underline !important;
+    box-shadow: none !important;
+}
+
+/* Authors */
+
+.post-content table td {
+    color: rgba(0, 0, 0, 0.72);
+}
+
+/* Your name */
+
+.post-content table strong {
+    color: #000000;
+    font-weight: 650;
+}
+
+/* Journal and year */
+
+.post-content table em {
+    color: rgba(0, 0, 0, 0.58);
+    font-size: 0.95em;
+}
+
+/* =========================================
+   Section headings
+   ========================================= */
+
+.post-content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .post-content table {
+        font-size: 0.85rem;
+        padding: 4px;
+        border-spacing: 0 6px;
+    }
+
+    .post-content table td {
+        padding: 14px 15px;
+        line-height: 1.6;
+    }
+
+}
+
+
